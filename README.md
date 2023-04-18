@@ -89,3 +89,8 @@ to stop any container
 '''
 docker stop container id
 '''
+
+
+'''
+python setup.py install
+'''
