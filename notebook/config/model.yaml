@@ -1,0 +1,28 @@
+grid_search:
+  class: GridSearchCV
+  module: sklearn.model_selection
+  params:
+    cv: 3
+    verbose: 1
+model_selection:
+  module_0:
+    class: LinearRegression
+    module: sklearn.linear_model
+    params:
+     fir_intercept: True
+      
+    search_param_grid:
+      fir_intercept:
+      - True
+      - False
+
+  module_1:
+    class: ModelClassName
+    module: sklearn.ensemble
+    params:
+      param_name1: value1
+      param_name2: value2
+    search_param_grid:
+      param_name:
+      - param_value_1
+      - param_value_2
